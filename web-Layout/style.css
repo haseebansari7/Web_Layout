@@ -1,0 +1,77 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-align: center;
+  grid-template-columns: 60px 350px 1fr 200px;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+nav,
+section,
+main,
+aside {
+  padding-top: 24px;
+}
+nav {
+  color: white;
+  grid-row: 1/-1;
+  background-color: darkslategray;
+}
+menu {
+  background-color: darkcyan;
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  gap: 12px;
+}
+button {
+  font-size: 16px;
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+button:last-child {
+  background-color: tomato;
+  margin-left: auto;
+}
+button:last-child:hover {
+  background-color: red;
+  margin-left: auto;
+}
+
+button:hover {
+  background-color: mediumturquoise;
+  color: black;
+  transition: transform 0.6s ease;
+  transform: scale(1.1);
+}
+section {
+  background: gainsboro;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: scroll;
+}
+.email {
+  background: #aaa;
+  display: flex;
+  height: 96px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+aside {
+  background: gainsboro;
+}
